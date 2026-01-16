@@ -6,6 +6,41 @@ async function getData(){
 }
 
 async function main() {
-    let data = await getData();
-    console.log(data)
+   
+    console.log(await getData())
 }
+main()
+
+
+// async function getData(){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(() => {
+//             resolve (455);
+//         }, 3500);
+//     })
+// }
+// async function getData(){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout(() => {
+//             resolve (455);
+//         }, 3500);
+//     })
+// }
+
+// async function main(){
+
+//     console.log("Loading modules")
+    
+//     let data = await getData()
+
+//     console.log(data)
+    
+//     console.log("Load Data")
+    
+//     console.log("process data")
+// }
+// main()
+
+// settle means resolve or reject
+// resolve means prmoise has settled successfully
+// reject means promise has not settled successfully
