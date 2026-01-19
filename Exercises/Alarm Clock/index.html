@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 119, 255, 0.466);
+
+        }
+        .Alarm{
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            bottom: 40px;
+        }
+        .digital-clock{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 80%;
+            gap: 7px;
+            font-size: 50px;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.411);
+            color: rgb(0, 170, 255);
+
+        }
+        h1{
+            font-size: 70px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgb(0, 85, 255);
+        }
+        .hms{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .mdy{
+            display: flex;
+        }
+        .ele{
+            font-size: 50px;
+            width: 50%;
+            background-color: rgba(0, 119, 255, 0.312);
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Alarm">
+        <h1>Alarm Clock</h1>
+    <div class="digital-clock">
+        <div class="hms">
+                <input type="number" id="hour" class="ele" value="00" min="0" max="23">
+                <input type="number" id="minutes" class="ele" value="00" min="0" max="59">
+                <input type="number" id="seconds" class="ele" value="00" min="0" max="59">
+            </div>
+
+            <div class="mdy">
+                <input type="number" id="months" class="ele" value="01" min="1" max="12">
+                <input type="number" id="day" class="ele" value="01" min="1" max="31">
+                <input type="number" id="year" class="ele" value="2026" min="2026" max="2099">
+            </div>
+            <button id="btn">Set alarm</button>
+            <button id="cbtn">Current Time</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

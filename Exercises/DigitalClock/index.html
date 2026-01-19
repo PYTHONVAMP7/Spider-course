@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 119, 255, 0.466);
+
+        }
+        .digital-clock{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 7px;
+            font-size: 50px;
+            border-radius: 15px;
+            padding: 40px 30px;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.411);
+            color: rgb(0, 170, 255);
+        }
+        .hms{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .mdy{
+            display: flex;
+        }
+        .ele{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="digital-clock">
+        <div class="hms">
+            <h1 id="hour" class="ele">00:</h1>
+            <h1 id="minutes" class="ele">00:</h1>
+            <h1 id="seconds" class="ele">00</h1>
+        </div>
+
+        <div class="mdy">
+            <h1 id="months" class="ele">Months/</h1>
+            <h1 id="day" class="ele">01/</h1>
+            <h1 id="year" class="ele">2026</h1>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
